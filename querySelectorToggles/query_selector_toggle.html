@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Toggle Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toggle Example</h1>
+    <p id="text">Click the button to toggle highlight on this text.</p>
+    <button id="toggleBtn">Toggle Highlight</button>
+
+    <script>
+        // Select the button and the paragraph
+        const button = document.querySelector('#toggleBtn');
+        const text = document.querySelector('#text');
+
+        // Add click event listener to the button
+        button.addEventListener('click', () => {
+            // Toggle the 'highlight' class on the paragraph
+            text.classList.toggle('highlight');
+        });
+    </script>
+</body>
+</html>
